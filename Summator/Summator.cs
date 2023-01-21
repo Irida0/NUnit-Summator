@@ -5,21 +5,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Summator
 {
     public static class Summator
     {
-        public static int Sum(int[] arr) 
+        public static double Sum(double[] arr)
         {
-            int sum = arr[0];
+            double sum = 0;
 
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
 
             return sum;
 
-        } 
+        }
     }
 }
+
+
