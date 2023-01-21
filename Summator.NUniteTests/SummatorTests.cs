@@ -1,9 +1,12 @@
 using NUnit.Framework;
+using System.ComponentModel.DataAnnotations;
 
 namespace Summator.NUniteTests
 {
     public class SummatorTests
     {
+
+        //Sum tests
 
         [Test]
         public void Test_Summator_SumTwoPositiveNumbers() 
@@ -82,6 +85,40 @@ namespace Summator.NUniteTests
 
             Assert.That(actual, Is.EqualTo(expected));
         }
-  
+
+        //Average tests
+
+        [Test]
+        public void Test_Summator_AveragePositiveNumbers()
+        {
+            var nums = new double[] {5, 5, 5 };
+            var expected = 5;
+
+            var actual = Summator.Average(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Summator_AverageNegativeNumbers()
+        {
+            var nums = new double[] { -5, -5, -5 };
+            var expected = -5;
+
+            var actual = Summator.Average(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Summator_AverageDecimalNumbers()
+        {
+            var nums = new double[] { 5,4, 5.2, 5.2 };
+            var expected = 4.85;
+
+            var actual = Summator.Average(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
     }
 }
