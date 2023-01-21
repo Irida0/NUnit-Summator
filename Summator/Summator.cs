@@ -22,6 +22,7 @@ namespace Summator
             return sum;
 
         }
+
     }
 }
 
