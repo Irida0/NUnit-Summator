@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine( "The sum is: " + Summator.Sum (new int[] {1, 2, 3}));
+            Console.WriteLine( "The average is: " + Summator.Average (new double[] { 5, 4, 5.2, 5.2 }));
         }
     }
 }
