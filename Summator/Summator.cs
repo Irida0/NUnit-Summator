@@ -10,6 +10,8 @@ namespace Summator
 {
     public static class Summator
     {
+
+        //Sum method
         public static double Sum(double[] arr)
         {
             double sum = 0;
@@ -23,6 +25,8 @@ namespace Summator
 
         }
 
+
+        //Average method
         public static double Average(double[] arr)
         {
             double sum = 0;
