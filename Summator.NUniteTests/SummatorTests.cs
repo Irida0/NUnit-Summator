@@ -56,8 +56,8 @@ namespace Summator.NUniteTests
         [Test]
         public void Test_Summator_SumZeroNumber()
         {
-            var nums = new double[] { 0 };
-            var expected = 0;
+            var nums = new double[] { 0, 6 };
+            var expected = 6;
 
             var actual = Summator.Sum(nums);
 
@@ -120,5 +120,61 @@ namespace Summator.NUniteTests
 
             Assert.That(actual, Is.EqualTo(expected));
         }
+
+        [Test]
+        public void Test_Summator_MultiplyTwoPositiveNumbers()
+        {
+            var nums = new double[] { 5, 4 };
+            var expected = 20;
+
+            var actual = Summator.Multiply(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Summator_MultiplyTwoNegativeNumbers()
+        {
+            var nums = new double[] { -5, -4 };
+            var expected = 20;
+
+            var actual = Summator.Multiply(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Summator_MultiplyTwoDecimalNumbers()
+        {
+            var nums = new double[] { 2.5, 1.5 };
+            var expected = 3.75;
+
+            var actual = Summator.Multiply(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Summator_MultiplyZeroNumber()
+        {
+            var nums = new double[] { 0, 5 };
+            var expected = 0;
+
+            var actual = Summator.Multiply(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Test_Summator_MultiplyEmptyArray()
+        {
+            var nums = new double[] {  };
+            var expected = 0;
+
+            var actual = Summator.Multiply(nums);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
+
     }
 }
