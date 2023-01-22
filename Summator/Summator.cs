@@ -14,14 +14,14 @@ namespace Summator
         //Sum method
         public static double Sum(double[] arr)
         {
-            double sum = 0;
+            double result = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
-                sum += arr[i];
+                result += arr[i];
             }
 
-            return sum;
+            return result;
 
         }
 
@@ -29,16 +29,35 @@ namespace Summator
         //Average method
         public static double Average(double[] arr)
         {
-            double sum = 0;
+            double result = 0;
 
             for (int i = 0; i < arr.Length; i++)
             {
-                sum += arr[i];
+                result += arr[i];
             }
 
-            double average = sum/arr.Length;
+            result = result/arr.Length;
 
-            return average;
+            return result;
+
+        }
+
+
+        //Multiply method
+        public static double Multiply(double[] arr)
+        {
+            double result = 0;
+
+            if (arr.Length > 0)
+                result = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+ 
+                result *= arr[i];
+            }
+
+            return result;
 
         }
     }
