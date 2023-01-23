@@ -36,7 +36,7 @@ namespace Summator
                 result += arr[i];
             }
 
-            result = result/arr.Length;
+            result = result / arr.Length;
 
             return result;
 
@@ -49,16 +49,17 @@ namespace Summator
             double result = 0;
 
             if (arr.Length > 0)
+            {
                 result = arr[0];
+            }
 
             for (int i = 1; i < arr.Length; i++)
             {
- 
+
                 result *= arr[i];
             }
 
             return result;
-
         }
     }
 }
