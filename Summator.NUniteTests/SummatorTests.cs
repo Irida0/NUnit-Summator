@@ -9,7 +9,7 @@ namespace Summator.NUniteTests
         //Sum tests
 
         [Test]
-        public void Test_Summator_SumTwoPositiveNumbers() 
+        public void Test_Summator_SumTwoPositiveNumbers()
         {
             //Arrange
             var nums = new double[] { 1, 2 };
@@ -17,7 +17,7 @@ namespace Summator.NUniteTests
             //Act
             var actual = Summator.Sum(nums);
             //Assert
-            Assert.That(actual, Is.EqualTo(expected));  
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
         [Test]
@@ -54,7 +54,7 @@ namespace Summator.NUniteTests
         }
 
         [Test]
-        public void Test_Summator_SumZeroNumber()
+        public void Test_Summator_SumWithZeroNumber()
         {
             var nums = new double[] { 0, 6 };
             var expected = 6;
@@ -91,7 +91,7 @@ namespace Summator.NUniteTests
         [Test]
         public void Test_Summator_AveragePositiveNumbers()
         {
-            var nums = new double[] {5, 5, 5 };
+            var nums = new double[] { 5, 5, 5 };
             var expected = 5;
 
             var actual = Summator.Average(nums);
@@ -113,7 +113,7 @@ namespace Summator.NUniteTests
         [Test]
         public void Test_Summator_AverageDecimalNumbers()
         {
-            var nums = new double[] { 5,4, 5.2, 5.2 };
+            var nums = new double[] { 5, 4, 5.2, 5.2 };
             var expected = 4.85;
 
             var actual = Summator.Average(nums);
@@ -155,7 +155,7 @@ namespace Summator.NUniteTests
         }
 
         [Test]
-        public void Test_Summator_MultiplyZeroNumber()
+        public void Test_Summator_MultiplyWithZeroNumber()
         {
             var nums = new double[] { 0, 5 };
             var expected = 0;
@@ -168,7 +168,7 @@ namespace Summator.NUniteTests
         [Test]
         public void Test_Summator_MultiplyEmptyArray()
         {
-            var nums = new double[] {  };
+            var nums = new double[] { };
             var expected = 0;
 
             var actual = Summator.Multiply(nums);
